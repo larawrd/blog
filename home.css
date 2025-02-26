@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    color: white; /* Color del texto */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Asegura que el título esté arriba */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/* Estilos para el título arriba y centrado */
+.title-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Espacio desde la parte superior */
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 15px; /* Ajusta el espaciado entre letras si lo deseas */
+    transform: scaleY(1.5); /* Alarga el texto en el eje vertical */
+}
+
+h1 {
+    font-size: 5em;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Radnika Next', sans-serif; /* Usando la fuente Radnika */    
+  }
+  
+  span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 40px; /* Espacio entre el título y las imágenes */
+}
+
+.marquee {
+    display: flex;
+    width: max-content;
+}
+
+.marquee-content {
+    display: flex;
+    gap: 10px;
+}
+
+.marquee img {
+    height: 200px;
+}
